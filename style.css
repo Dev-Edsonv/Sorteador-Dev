@@ -15,14 +15,72 @@ body {
     display: block;
 }
 
-label {
-
+div {
+    text-align: center;
+    margin-top: 90px;
 }
 
-#firstNumber {
-
+h3 {
+    font-size: 32px;
+    color: #fff;
 }
 
-#secoundNumber {
+.numbers {
+    width: 258px;
+    height: 62px;
+    font-size: 25px;
+    background-color: rgb(79, 79,79);
+    border-radius: 14px;
+    margin: 35px 45px 0 45px;
+    padding-left: 17px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
 
+.numbers:hover {
+    opacity: 0.4;
+    font-size: 19px;
+    background-color: red;
+    cursor: grab;
+    transition: 1s linear;
+}
+
+.numbers::placeholder {
+    color: #fff;
+}
+
+.numbers::placeholder:hover {
+    color: gold;
+}
+
+.button {
+    width: 258px;
+    height: 62px;
+    font-size: 25px;
+    background-color: #aec346;
+    color: #fff;
+    text-align: center;
+    display: block;
+    margin: 20px auto;
+    border: none;
+    border-radius: 10px;
+}
+
+.button:hover {
+    box-shadow: 1px 4px 15px 0px rgb(174, 195, 6, 0.6);
+    transition: 1s linear;
+    margin-top: 25px;
+    cursor: pointer;
+}
+
+.button:active {
+    box-shadow: 1px 4px 28px 9px rgb(50, 205, 50, 0.6);
+    transition: 0.1s linear;
+    cursor: grab;
+    margin-top: 35px;
+}
+
+@media (max-width: 667px;) {
+    
 }
