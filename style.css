@@ -81,6 +81,9 @@ h3 {
     margin-top: 35px;
 }
 
-@media (max-width: 667px;) {
-    
+@media (max-width: 667px) {
+
+    #logo {
+        width: 300px;
+    }
 }
