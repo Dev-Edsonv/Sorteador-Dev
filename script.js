@@ -1,13 +1,19 @@
-let firstNumber = document.querySelector("#firstNumber").value
-let secoudNumber = document.querySelector("#secoundNumber).value
-let paragraph = document.querySelector("p")                                        
+const button = document.querySelector("button")
 
-function draw() {
+function drawNumber() {
+  
+  let min = Math.ceil(document.querySelector("#firstNumber").value)
+  let max = Math.floor(document.querySelector("#secoundNumber").value)
+  let paragraph = document.querySelector("p")
+  let prizeDraw = Math.floor(Math.random() * (max - min) + min);
 
-  if(firstNumber >= secoundNumber) {
-    paragraph.innerHTML = " O primeiro número não poder ser maior/igual ao segundo"
-
-}else {
-    let drawNumber = Math.floor(Math.random() * (firstNumber - secoundNumber + 1)) + secoundNumber;
-    alert('o numero sorteado foi ${drawNumber}')
+  if(min >= max) {
+    paragraph.innerHTML = `O primeiro número não pode ser maior/igual
+    ao segundo numero`
+  } else {
+    paragraph.innerHTML =`O número sorteado foi ${prizeDraw}`
   }
+  
+}
+
+button.addEventListener("click", drawNumber)

@@ -36,22 +36,20 @@ h3 {
     outline: none;
     border: none;
     cursor: pointer;
+    color: #000;
 }
 
-.numbers:hover {
+.numbers:active {
     opacity: 0.4;
     font-size: 19px;
     background-color: red;
     cursor: grab;
-    transition: 1s linear;
-}
-
-.numbers::placeholder {
+    transition: 0.2s linear;
     color: #fff;
 }
 
-.numbers::placeholder:hover {
-    color: gold;
+.numbers:hover {
+    color: #fff;
 }
 
 .button {
@@ -83,8 +81,10 @@ h3 {
 
 p { 
     color: #fff;
-    text-aligtn: center;
-    font-size: 16px;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 25px;
+    font-weight: 600;
 }
 
 @media (max-width: 667px) {
